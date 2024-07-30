@@ -1,0 +1,236 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+/* header  */
+header {
+    background: linear-gradient(180deg, #ffffff, var(--light), #e3eeee);
+}
+
+#hero {
+    height: auto;
+    width: auto;
+    border-radius: 20px;
+    background: #e3eeee;
+}
+
+#headerSlider .carousel-item {
+    height: 500px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    background-size: auto 120%;
+    animation: animate_bg 15s linear infinite;
+}
+
+@keyframes animate_bg {
+    0% {
+        background-size: auto 150%;
+    }
+
+    100% {
+        background-size: auto 170%;
+    }
+}
+
+.headerSlide1 {
+    background: url('../img/headerSlide1.jpg') center;
+    border-radius: 20px;
+}
+
+.headerSlide2 {
+    background: url('../img/headerSlide2.jpg') center;
+    border-radius: 20px;
+}
+
+.headerSlide3 {
+    background: url('../img/headerSlide3.jpg') center;
+    border-radius: 20px;
+}
+.searchContainer {
+    display: flex;
+    align-items: center;
+    background-color: white;
+    font-size: var(--fsz_medium);
+    padding: 0.4rem;
+}
+
+@media (max-width: 768px) {
+    .searchContainer {
+        flex-direction: column;
+    }    
+    .searchContainer .btn_secondary {
+        width: 100%;
+        margin: 0.4rem 0;
+    }
+    .cities,
+    .propertyPrice {
+        width: 100%;
+    }
+
+    .middle {
+        width: 100%;
+    }
+
+    .propertyType,
+    .propertyStatus {
+        flex: 1;
+    }
+}
+
+.middle {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.searchInputCont input {
+    cursor: pointer;
+    border: none;
+    padding: var(--input_padding) !important;
+    font-size: var(--fsz_medium);
+}
+
+.searchInputCont input::placeholder {
+    color: var(--gray);
+}
+
+.searchInputCont svg {
+    fill: var(--gray);
+    position: absolute;
+    cursor: pointer;
+    top: 50%;
+    right: 5px;
+    transform: translateY(-50%);
+}
+
+.dropdown-menu {
+    max-height: 160px;
+    overflow: auto;
+    width: 200px;
+}
+
+.filterListItem {
+    font-weight: 300 !important;
+    font-family: var(--title_font);
+    font-size: var(--fsz_medium) !important;
+}
+
+
+/* stats  */
+#stats {
+    height: auto;
+    background: #e3eeee;
+}
+
+/* about  */
+#about {
+    height: auto;
+    background: linear-gradient(180deg, var(--secondary), var(--dark_secondary));
+}
+
+.aboutusImage1 {
+    height: 410px;
+    border-radius: 20px;
+    box-shadow: inset 0 0 20px 400px #0000002e;
+    transition: 0.5s ease-in;
+}
+
+.aboutusImage1:hover {
+    box-shadow: inset 0 0 0 0 #00000007;
+}
+
+@media (max-width: 768px) {
+    .aboutusImage1 {
+        height: 200px;
+    }
+}
+
+.aboutusImage2 {
+    height: 200px;
+    border-radius: 20px;
+    box-shadow: inset 0 0 20px 400px #0000002e;
+    transition: 0.5s ease-in;
+}
+
+.aboutusImage2:hover {
+    box-shadow: inset 0 0 0 0 #00000007;
+}
+
+/* features  */
+
+#features {
+    height: auto;
+    background: var(--light);
+}
+
+.features_card {
+    height: auto;
+    width: auto;
+}
+
+.iconBox {
+    width: fit-content;
+    padding: 0.5rem;
+    border-radius: 10px;
+    box-shadow: inset 0 0 0 1px var(--secondary);
+    transition: 0.5s ease-in-out;
+}
+
+.iconBox svg {
+    fill: var(--secondary);
+    transition: 0.3s;
+}
+
+.features_card:hover .iconBox {
+    box-shadow: inset 0 0 0 100px var(--secondary);
+}
+
+.features_card:hover .iconBox svg {
+    fill: var(--light) !important;
+}
+
+/* listing  */
+#listing {
+    background: var(--dark_secondary);
+}
+
+.listing_image {
+    height: 250px;
+    width: auto;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.listing_image .image {
+    height: 100%;
+    width: 100%;
+    transition: 0.8s ease-in-out;
+}
+
+.listing_card:hover .listing_image .image {
+    scale: 1.07;
+}
+
+.listing_info.divider {
+    height: 20px;
+    width: 1px;
+    background: var(--light);
+    opacity: 0.7;
+}
+
+/* portal  */
+
+#portal {
+    height: auto;
+    width: auto;
+    background: linear-gradient(125deg, #1010106d, #1010106d), url(../img/portal_bg.jpg) center fixed;
+    background-size: cover;
+}
+
+/* blogs  */
+.blog_card {
+    height: 400px;
+    width: auto;
+}
