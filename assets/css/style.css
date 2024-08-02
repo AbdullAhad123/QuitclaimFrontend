@@ -48,6 +48,7 @@ header {
     background: url('../img/headerSlide3.jpg') center;
     border-radius: 20px;
 }
+
 .searchContainer {
     display: flex;
     align-items: center;
@@ -59,11 +60,13 @@ header {
 @media (max-width: 768px) {
     .searchContainer {
         flex-direction: column;
-    }    
+    }
+
     .searchContainer .btn_secondary {
         width: 100%;
         margin: 0.4rem 0;
     }
+
     .cities,
     .propertyPrice {
         width: 100%;
@@ -191,6 +194,33 @@ header {
     fill: var(--light) !important;
 }
 
+.featured_choose_card {
+    height: auto;
+    width: auto;
+}
+
+.iconBoxInvert {
+    width: fit-content;
+    padding: 0.5rem;
+    border-radius: 10px;
+    box-shadow: inset 0 0 0 1px var(--light);
+    transition: 0.5s ease-in-out;
+}
+
+.iconBoxInvert svg {
+    fill: var(--light);
+    transition: 0.3s;
+}
+
+.featured_choose_card:hover .iconBoxInvert {
+    box-shadow: inset 0 0 0 100px var(--light);
+}
+
+.featured_choose_card:hover .iconBoxInvert svg {
+    fill: var(--secondary) !important;
+}
+
+
 /* listing  */
 #listing {
     background: var(--dark_secondary);
@@ -233,4 +263,56 @@ header {
 .blog_card {
     height: 400px;
     width: auto;
+}
+
+
+/* testimonials  */
+
+#testimonial {
+    height: auto;
+    width: auto;
+    background: linear-gradient(180deg, #ffffff, var(--light), #e3eeee);
+}
+
+.testimonial_card {
+    min-height: 350px;
+    width: auto;
+    padding: 1.4rem 1rem;
+    border: 1px solid var(--primary);
+    border-radius: 15px;
+    background-color: var(--light) !important;
+    display: flex;
+    align-items: center;
+}
+
+/* faq  */
+#faq {
+    background: #e3eeee;
+}
+
+.faq_item {
+    background-color: var(--light);
+}
+
+.faq_item_btn {
+    height: auto;
+    width: auto;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    transition: 0.3s;
+    font-size: 1.15rem;
+}
+
+.faq_item_btn:hover {
+    background: #f4f4f4;
+}
+
+.faq_icon {
+    transition: 0.3s;
+}
+
+.toggleIcon {
+    transform: rotate(-180deg);
 }
