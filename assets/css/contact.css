@@ -1,0 +1,60 @@
+/* header  */
+header {
+    background: linear-gradient(180deg, #ffffff, var(--light), #e3eeee);
+}
+
+#hero {
+    height: auto;
+    width: auto;
+    border-radius: 20px;
+    background: #e3eeee;
+}
+
+#headerSlider .carousel-item {
+    height: 500px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    background-size: auto 120%;
+    animation: animate_bg 15s linear infinite;
+}
+
+@media (max-width: 525px) {
+    #headerSlider .carousel-item {
+        height: 250px;
+    }
+}
+
+@keyframes animate_bg {
+    0% {
+        background-size: auto 150%;
+    }
+
+    100% {
+        background-size: auto 170%;
+    }
+}
+
+.headerSlide1 {
+    background: url('../img/contactSlide1.jpg') center;
+    border-radius: 20px;
+}
+
+.headerSlide2 {
+    background: url('../img/contactSlide2.jpg') center;
+    border-radius: 20px;
+}
+
+.contactCard {
+    min-height: 280px;
+    width: auto;
+    background-color: var(--light);
+    border-radius: 10px;
+    box-shadow: 0 4px 4px 1px #0000001b;
+}
+
+/* stats  */
+#stats {
+    height: auto;
+    background: #e3eeee;
+}

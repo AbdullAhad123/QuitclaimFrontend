@@ -34,6 +34,25 @@
     max-width: 1280px !important;
 }
 
+#topBtn {
+    position: fixed;
+    bottom: 15px;
+    right: 15px;
+    z-index: 99;
+}
+
+#backToTop {
+    background: var(--dark_yellow);
+    border: 1px solid var(--yellow);
+    height: 50px;
+    width: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 100px;
+    box-shadow: 0px 3px 5px 1px #0000001f;
+}
+
 /* text  */
 
 .title {
@@ -307,4 +326,26 @@
 
 .footerLink:hover {
     color: var(--light);
+}
+
+#contact {
+    height: auto;
+    width: auto;
+    background: linear-gradient(0deg, #fffffffa, #fffffffa), url(../img/testmonialBG.jpg) center fixed;
+    background-size: cover;
+}
+
+.contactFormContainer {
+    background: linear-gradient(180deg , var(--secondary) ,var(--dark_secondary))
+}
+
+.formContainer {
+    height: fit-content;
+    width: auto;
+    background-color: var(--light);
+    border-radius: 15px;
+}
+
+.contactInput {
+    padding: 0.75rem !important;
 }

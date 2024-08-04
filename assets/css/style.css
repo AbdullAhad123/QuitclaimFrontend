@@ -24,6 +24,12 @@ header {
     animation: animate_bg 15s linear infinite;
 }
 
+@media (max-width: 525px) {
+    #headerSlider .carousel-item {
+        height: 250px;
+    }
+}
+
 @keyframes animate_bg {
     0% {
         background-size: auto 150%;
@@ -267,10 +273,10 @@ header {
 
 /* testimonials  */
 
-#testimonial, #faq {
+#testimonial, #faq, #contact {
     height: auto;
     width: auto;
-    background: linear-gradient(0deg, #ffffffe7, #ffffffe7), url(../img/testmonialBG.jpg) center fixed;
+    background: linear-gradient(0deg, #fffffffa, #fffffffa), url(../img/testmonialBG.jpg) center fixed;
     background-size: cover;
 }
 
@@ -288,6 +294,7 @@ header {
 /* faq  */
 .faq_item {
     background-color: var(--light);
+    border: 1px solid #ededed;
 }
 
 .faq_item_btn {
@@ -313,9 +320,9 @@ header {
     transform: rotate(-180deg);
 }
 
-#contact {
+/* #contact {
     background: var(--light);
-}
+} */
 
 .contactFormContainer {
     background: linear-gradient(180deg , var(--secondary) ,var(--dark_secondary))

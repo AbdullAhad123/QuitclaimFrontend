@@ -1,0 +1,29 @@
+
+/* faq  */
+.faq_item {
+    background-color: var(--light);
+    border: 1px solid #ededed;
+}
+
+.faq_item_btn {
+    height: auto;
+    width: auto;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    transition: 0.3s;
+    font-size: 1.15rem;
+}
+
+.faq_item_btn:hover {
+    background: #f4f4f4;
+}
+
+.faq_icon {
+    transition: 0.3s;
+}
+
+.toggleIcon {
+    transform: rotate(-180deg);
+}

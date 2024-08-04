@@ -4,3 +4,18 @@ $(".user_btn").on("click", function () {
   dropdown.toggle();
   icon.toggleClass("dropdownIconTransform");
 });
+
+// show backToTop 
+$(window).on('scroll load', function () {
+    const scrolled = $(window).scrollTop();
+    if (scrolled >= 500) {
+        $("#topBtn").fadeIn()
+    } else {
+        $("#topBtn").fadeOut()
+    }
+});
+
+// backToTop
+$("#backToTop").click(function () {
+    window.scrollTo(0, 0);
+});
