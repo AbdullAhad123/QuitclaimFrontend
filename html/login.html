@@ -1,0 +1,149 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Login to your account - Quitclaim.express</title>
+    <link rel="stylesheet" href="../assets/css/all.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Outfit:wght@100..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" integrity="sha512-c42qTSw/wPZ3/5LBzD+Bw5f7bSF2oxou6wEb+I/lqeaKV5FDIfMvvRp772y4jcJLKuGUOpbJMdg/BTl50fJYAw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <style>
+        #sectionBg {
+            min-height: 100vh;
+            max-height: fit-content;
+            width: auto;
+            background: linear-gradient(25deg, #16161668, #57575737), url('../assets/img/joinNow_bg.jpg');
+        }
+        .formContainer {
+            height: auto;
+            max-width: 500px;
+            margin: auto;
+            box-shadow: 0 1px 8px 1px #00000027;
+            background-color: white;
+        }
+        
+        .underline {
+            height: 5px;
+            width: 80px;
+            border-radius: 10px;
+            background-color: var(--secondary);
+        }
+
+        .formInput {
+            padding: 0.75rem;
+            background: #fbfbfbf9;
+        }
+
+        .togglePassbtn {
+            background-color: transparent;
+            border: none;
+            cursor: pointer;
+            position: absolute;
+            top: 50%;
+            right: 10px;
+            transform: translateY(-50%);
+            fill: var(--gray);
+            z-index: 1;
+        }
+
+        .wrongInput {
+            border: 1px solid #cb0000 !important;
+        }
+
+    </style>
+</head>
+<body>
+
+    <div id="preloaderCont">
+        <div class="preloader">
+            <span class="loader"></span>
+        </div>
+    </div>
+
+    <div id="mainWrapper">
+        <section id="sectionBg" class="d-flex align-items-center justify-content-center">
+            <div class="col-12">
+                <div class="formContainer p-md-4 p-3">
+                    <div class="text-center my-2">
+                        <a href="index.html" class="navbar-brand m-0">
+                            <span class="title fw-medium fs-4 text-uppercase">Quitclaim.</span>  
+                        </a>
+                    </div>
+                    <div class="my-2">    
+                        <h1 class="my-1 fw-medium title fs-3">Login to your account</h1>
+                        <div class="underline"></div>
+                    </div>
+                    <form class="my-4">
+                        <div class="my-3">
+                            <label for="email" class="form-label title fw-medium fs_5">Email Address</label>
+                            <input type="email" class="form-control text formInput shadow-sm" id="email" placeholder="Enter email address">
+                        </div>
+                        <div class="my-3">
+                            <label for="password" class="form-label title fw-medium fs_5">Password</label>
+                            <div class="position-relative">
+                                <input type="password" class="form-control text formInput shadow-sm" id="password" placeholder="Enter password">
+                                <button class="togglePassbtn">
+                                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="18" height="18"><g id="_01_align_center" data-name="01 align center"><path d="M23.821,11.181v0C22.943,9.261,19.5,3,12,3S1.057,9.261.179,11.181a1.969,1.969,0,0,0,0,1.64C1.057,14.739,4.5,21,12,21s10.943-6.261,11.821-8.181A1.968,1.968,0,0,0,23.821,11.181ZM12,19c-6.307,0-9.25-5.366-10-6.989C2.75,10.366,5.693,5,12,5c6.292,0,9.236,5.343,10,7C21.236,13.657,18.292,19,12,19Z"/><path d="M12,7a5,5,0,1,0,5,5A5.006,5.006,0,0,0,12,7Zm0,8a3,3,0,1,1,3-3A3,3,0,0,1,12,15Z"/></g></svg>
+                                </button>
+                            </div>
+                            <div class="text-end my-1">
+                                <a href="#" class="text_secondary text-decoration-none text">Forgot Password?</a>
+                            </div>
+                        </div>
+                        <div class="my-3">
+                            <button class="btn_secondary btnLogin border-0 w-100 fs_5 rounded">Login</button>
+                            <p class="text-center my-2 text fs_5">Don't have an account? <a href="#">Signup</a></p>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </section>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js" integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="../assets/js/app.js"></script>
+
+    <script>
+        $(".btnLogin").click(function (e) {
+            e.preventDefault();
+            const email = $("#email").val();
+            const password= $("#password").val();
+
+            if (email) {
+                $("#email").removeClass('wrongInput');
+            } else {
+                $("#email").addClass('wrongInput');
+                $("#email").focus();
+            }
+
+            if (password) {
+                $("#password").removeClass('wrongInput');
+            } else {
+                $("#password").addClass('wrongInput');
+                $("#password").focus();
+            }
+
+        });
+        $(".togglePassbtn").click(function (e) {
+            e.preventDefault();
+            const passwordField = $('#password');
+            const isPasswordVisible = passwordField.attr('type') === 'text';
+            const newType = isPasswordVisible ? 'password' : 'text';
+            const newIcon = isPasswordVisible ? 
+                '<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="18" height="18"><g id="_01_align_center" data-name="01 align center"><path d="M23.821,11.181v0C22.943,9.261,19.5,3,12,3S1.057,9.261.179,11.181a1.969,1.969,0,0,0,0,1.64C1.057,14.739,4.5,21,12,21s10.943-6.261,11.821-8.181A1.968,1.968,0,0,0,23.821,11.181ZM12,19c-6.307,0-9.25-5.366-10-6.989C2.75,10.366,5.693,5,12,5c6.292,0,9.236,5.343,10,7C21.236,13.657,18.292,19,12,19Z"/><path d="M12,7a5,5,0,1,0,5,5A5.006,5.006,0,0,0,12,7Zm0,8a3,3,0,1,1,3-3A3,3,0,0,1,12,15Z"/></g></svg>' : 
+                '<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="18" height="18"><path d="M23.271,9.419A15.866,15.866,0,0,0,19.9,5.51l2.8-2.8a1,1,0,0,0-1.414-1.414L18.241,4.345A12.054,12.054,0,0,0,12,2.655C5.809,2.655,2.281,6.893.729,9.419a4.908,4.908,0,0,0,0,5.162A15.866,15.866,0,0,0,4.1,18.49l-2.8,2.8a1,1,0,1,0,1.414,1.414l3.052-3.052A12.054,12.054,0,0,0,12,21.345c6.191,0,9.719-4.238,11.271-6.764A4.908,4.908,0,0,0,23.271,9.419ZM2.433,13.534a2.918,2.918,0,0,1,0-3.068C3.767,8.3,6.782,4.655,12,4.655A10.1,10.1,0,0,1,16.766,5.82L14.753,7.833a4.992,4.992,0,0,0-6.92,6.92l-2.31,2.31A13.723,13.723,0,0,1,2.433,13.534ZM15,12a3,3,0,0,1-3,3,2.951,2.951,0,0,1-1.285-.3L14.7,10.715A2.951,2.951,0,0,1,15,12ZM9,12a3,3,0,0,1,3-3,2.951,2.951,0,0,1,1.285.3L9.3,13.285A2.951,2.951,0,0,1,9,12Zm12.567,1.534C20.233,15.7,17.218,19.345,12,19.345A10.1,10.1,0,0,1,7.234,18.18l2.013-2.013a4.992,4.992,0,0,0,6.92-6.92l2.31-2.31a13.723,13.723,0,0,1,3.09,3.529A2.918,2.918,0,0,1,21.567,13.534Z"/></svg>';
+
+            passwordField.attr('type', newType);
+            $(this).empty().html(newIcon);
+        });
+
+
+    </script>
+</body>
+
+</html>

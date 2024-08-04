@@ -58,3 +58,10 @@ header {
     height: auto;
     background: #e3eeee;
 }
+
+.underline {
+    height: 5px;
+    width: 180px;
+    border-radius: 10px;
+    background-color: var(--yellow);
+}

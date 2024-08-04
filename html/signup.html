@@ -1,0 +1,84 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Login to your account - Quitclaim.express</title>
+    <link rel="stylesheet" href="../assets/css/all.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Outfit:wght@100..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" integrity="sha512-c42qTSw/wPZ3/5LBzD+Bw5f7bSF2oxou6wEb+I/lqeaKV5FDIfMvvRp772y4jcJLKuGUOpbJMdg/BTl50fJYAw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <style>
+        #sectionBg {
+            min-height: 100vh;
+            max-height: fit-content;
+            width: auto;
+            background: linear-gradient(25deg, #16161668, #57575737), url('../assets/img/joinNow_bg.jpg');
+        }
+        .formContainer {
+            height: auto;
+            max-width: 500px;
+            margin: auto;
+            box-shadow: 0 1px 8px 1px #00000027;
+            background-color: white;
+        }
+        
+        .underline {
+            height: 5px;
+            width: 80px;
+            border-radius: 10px;
+            background-color: var(--secondary);
+        }
+
+        .formInput {
+            padding: 0.75rem;
+            background: #fbfbfbf9;
+        }
+
+    </style>
+</head>
+<body>
+
+    <div id="mainWrapper">
+        <section id="sectionBg" class="d-flex align-items-center justify-content-center">
+            <div class="col-12">
+                <div class="formContainer p-md-4 p-3">
+                    <div class="text-center my-2">
+                        <a href="#" class="navbar-brand m-0">
+                            <span class="title fw-medium fs-4 text-uppercase">Quitclaim.</span>  
+                        </a>
+                    </div>
+                    <div class="my-2">    
+                        <h1 class="my-1 fw-medium title fs-3">Reigster your account</h1>
+                        <div class="underline"></div>
+                    </div>
+                    <form class="my-4">
+                        <div class="my-3">
+                            <label for="email" class="form-label title fw-medium fs_5">Email Address</label>
+                            <input type="email" class="form-control text formInput shadow-sm" id="email" placeholder="Enter email address">
+                        </div>
+                        <div class="my-3">
+                            <label for="password" class="form-label title fw-medium fs_5">Password</label>
+                            <input type="password" class="form-control text formInput shadow-sm" id="password" placeholder="Enter password">
+                            <div class="text-end my-1">
+                                <a href="#" class="text_secondary text-decoration-none text">Forgot Password?</a>
+                            </div>
+                        </div>
+                        <div class="my-3">
+                            <button class="btn_secondary btnLogin border-0 w-100 fs_5 rounded">Login</button>
+                            <p class="text-center my-2 text fs_5">Don't have an account? <a href="#">Signup</a></p>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </section>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js" integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+</body>
+
+</html>
