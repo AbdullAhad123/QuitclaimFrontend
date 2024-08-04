@@ -60,6 +60,10 @@
     color: var(--light);
 }
 
+.text_lightgray {
+    color: var(--light_gray);
+}
+
 .text_white {
     color: var(--white);
 }
@@ -284,4 +288,23 @@
 
 .sidebar_list li a:hover::after {
     width: 15%;
+}
+
+#join {
+    background: linear-gradient(145deg, #000000a9, #0000005e), url('../img/joinNow_bg.jpg') center fixed;
+    background-size: cover;
+}
+
+
+/* footer  */
+.footerLink {
+    font-family: var(--text_font);
+    font-size: var(--fsz_medium);
+    color: var(--light_gray);
+    text-decoration: none;
+    transition: 0.3s;
+}
+
+.footerLink:hover {
+    color: var(--light);
 }

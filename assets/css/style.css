@@ -265,13 +265,13 @@ header {
     width: auto;
 }
 
-
 /* testimonials  */
 
-#testimonial {
+#testimonial, #faq {
     height: auto;
     width: auto;
-    background: linear-gradient(180deg, #ffffff, var(--light), #e3eeee);
+    background: linear-gradient(0deg, #ffffffe7, #ffffffe7), url(../img/testmonialBG.jpg) center fixed;
+    background-size: cover;
 }
 
 .testimonial_card {
@@ -286,10 +286,6 @@ header {
 }
 
 /* faq  */
-#faq {
-    background: #e3eeee;
-}
-
 .faq_item {
     background-color: var(--light);
 }
@@ -316,3 +312,30 @@ header {
 .toggleIcon {
     transform: rotate(-180deg);
 }
+
+#contact {
+    background: var(--light);
+}
+
+.contactFormContainer {
+    background: linear-gradient(180deg , var(--secondary) ,var(--dark_secondary))
+}
+
+.formContainer {
+    height: fit-content;
+    width: auto;
+    background-color: var(--light);
+    border-radius: 15px;
+}
+
+.contactInput {
+    padding: 0.75rem !important;
+}
+
+.underline {
+    height: 3px;
+    width: 80px;
+    border-radius: 10px;
+    background: var(--secondary);
+}
+
