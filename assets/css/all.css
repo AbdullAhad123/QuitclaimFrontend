@@ -148,6 +148,10 @@
     color: var(--black);
 }
 
+.text_yellow {
+    color: var(--yellow);
+}
+
 .fs_5 {
     font-size: var(--fsz_medium);
 }
@@ -181,9 +185,10 @@
 /* buttons  */
 
 .btn_secondary {
+    text-decoration: none !important;
     background: var(--secondary);
-    color: var(--light);
-    fill: var(--light);
+    color: var(--light) !important;
+    fill: var(--light) !important;
     outline: none;
     padding: var(--btn_padding);
     font-family: var(--text_font);
@@ -192,13 +197,15 @@
 
 .btn_secondary:hover {
     background: var(--dark_secondary);
-    color: var(--white);
-    fill: var(--white);
+    color: var(--white) !important;
+    fill: var(--white) !important;
 }
 
 .btn_primary {
+    text-decoration: none !important;
     background: var(--primary);
-    color: var(--dark);
+    color: var(--dark) !important;
+    fill: var(--dark) !important;
     outline: none;
     padding: var(--btn_padding);
     font-family: var(--text_font);
@@ -207,13 +214,15 @@
 
 .btn_primary:hover {
     background: var(--dark_primary);
-    color: var(--black);
+    color: var(--black) !important;
+    fill: var(--black) !important;
 }
 
 .btn_yellow {
+    text-decoration: none !important;
     background: var(--yellow);
-    color: var(--dark);
-    fill: var(--dark);
+    color: var(--dark) !important;
+    fill: var(--dark) !important;
     outline: none;
     padding: var(--btn_padding);
     font-family: var(--title_font);
@@ -222,14 +231,15 @@
 
 .btn_yellow:hover {
     background: var(--dark_yellow);
-    color: var(--black);
-    fill: var(--black);
+    color: var(--black) !important;
+    fill: var(--black) !important;
 }
 
 .btn_light {
+    text-decoration: none !important;
     background: var(--light);
-    color: var(--dark);
-    fill: var(--dark);
+    color: var(--dark) !important;
+    fill: var(--dark) !important;
     border: 1px solid var(--light_gray);
     ;
     outline: none;
@@ -241,8 +251,8 @@
 .user_btn {
     border: 1px solid var(--light_gray);
     outline: none;
-    fill: var(--dark);
-    color: var(--dark);
+    fill: var(--dark) !important;
+    color: var(--dark) !important;
 }
 
 .user_details_menu {
@@ -259,7 +269,7 @@
 
 @media (max-width: 768px) {
     .user_details_menu {
-        width: 250px;
+        width: 220px;
     }
 }
 
